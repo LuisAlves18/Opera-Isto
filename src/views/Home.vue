@@ -11,32 +11,36 @@
       <div>
         <div>
           <h2>Próximas Datas</h2>
-          <b-card-group deck>
-            <b-row class="mt-1 mb-3 mr-1 ml-1">
-              <b-card
-                class="text-center border-danger"
-                img-src="https://res.cloudinary.com/dsfbhbeyt/image/upload/v1628263066/opera%20isto/foto_mz8wof.webp"
-                img-alt="Card image"
-                style="height:18rem; background-color:#202124"
-                img-left
-              >
-                <b-card-text>
-                  Some quick example text to build on the card and make up the
-                  bulk of the card's content.
-                </b-card-text>
-              </b-card>
-              <b-card
-                class="text-center border-danger"
-                img-src="https://res.cloudinary.com/dsfbhbeyt/image/upload/v1628263066/opera%20isto/foto_mz8wof.webp"
-                img-alt="Card image"
-                style="height:18rem; background-color:#202124"
-                img-left
-              >
-                <b-card-text>
-                  Some quick example text to build on the card and make up the
-                  bulk of the card's content.
-                </b-card-text>
-              </b-card>
+          <b-card-group deck id="show-deck">
+            <b-row class="mt-1 mb-2  border-0  justify-content-center">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" >
+                <b-card
+                  class="text-center border-danger mt-1 mb-1"
+                  img-src="https://res.cloudinary.com/dsfbhbeyt/image/upload/v1628263066/opera%20isto/foto_mz8wof.webp"
+                  img-alt="Card image"
+                  style="height:11rem; background-color:#202124"
+                  img-left
+                >
+                  <b-card-text>
+                    Some quick example text to build on the card and make up the
+                    bulk of the card's content.
+                  </b-card-text>
+                </b-card>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <b-card
+                  class="text-center border-danger mt-1 mb-1"
+                  img-src="https://res.cloudinary.com/dsfbhbeyt/image/upload/v1628263066/opera%20isto/foto_mz8wof.webp"
+                  img-alt="Card image"
+                  style="height:11rem; background-color:#202124"
+                  img-left
+                >
+                  <b-card-text>
+                    Some quick example text to build on the card and make up the
+                    bulk of the card's content.
+                  </b-card-text>
+                </b-card>
+              </div>
             </b-row>
           </b-card-group>
         </div>
@@ -52,10 +56,19 @@ export default {
 </script>
 <style>
 .background {
-  overflow-y: block;
+  
   margin-top: -9vw;
   margin-left: -11vw;
   margin-right: 0;
   width: 110vw;
 }
+#show-deck{
+  margin:0;
+}
+/* @media only screen and (min-width: 1920px) {
+  #show-deck{
+    margin-left: 5rem;
+  }
+
+} */
 </style>
