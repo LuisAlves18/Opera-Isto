@@ -17,6 +17,7 @@
             
             <b-nav-item><router-link class="navRouter" :to="{name:'Edicoes'}">EDIÇÕES</router-link></b-nav-item>
             <b-nav-item><router-link class="navRouter" :to="{name:'Educacao'}">EDUCAÇÃO</router-link></b-nav-item>
+            <b-nav-item><router-link class="navRouter" :to="{name:'Equipa'}">EQUIPA</router-link></b-nav-item>
             
           </b-navbar-nav>
 
@@ -42,7 +43,7 @@ export default {
 #logo {
   margin:0px;
   margin-right:5vw;
-  width:9vw;
+  width:7vw;
   
 }
 .navRouter,#dropdown{

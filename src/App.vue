@@ -19,6 +19,8 @@ export default {
 
 html {
   background-color: #202124;
+  margin:0;
+  overflow-x: hidden;
 }
 #app {
   background-color: #202124;

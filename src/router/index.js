@@ -5,6 +5,7 @@ import Agenda from "@/views/Agenda.vue";
 import Edicoes from "@/views/Edicoes.vue";
 import Educacao from "@/views/Educacao.vue";
 import Espetaculos from "@/views/Espetaculos.vue";
+import Equipa from "@/views/Equipa.vue";
 
 
 Vue.use(VueRouter);
@@ -33,6 +34,11 @@ const routes = [{
         path: "/espetaculos",
         name: "Espetaculos",
         component: Espetaculos
+    },
+    {
+        path: "/equipa",
+        name: "Equipa",
+        component: Equipa
     }
 
 ];
