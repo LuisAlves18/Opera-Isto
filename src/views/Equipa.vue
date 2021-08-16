@@ -22,7 +22,7 @@
 </template>
 <style>
 #team {
-  /* background-image: url("../assets/cadeiras-teatro.jpg"); */
+  background-image: url("../assets/cadeiras-teatro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -52,7 +52,7 @@
 }
 
 #teamPhoto {
-  height: 20vh;
+  height: 25vh;
 }
 .teamPhotos1:hover #teamPhoto {
   opacity: 0.3;

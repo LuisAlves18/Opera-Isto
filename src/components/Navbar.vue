@@ -47,11 +47,13 @@ export default {
   
 }
 .navRouter,#dropdown{
+
   margin-left: 5vw;
   margin-right: 5vw;
     color: #e8eaed;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-family:Oswald extralight;
+    text-decoration: None !important;
 }
 
 
