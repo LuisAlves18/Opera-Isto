@@ -2,11 +2,11 @@
   <div class="equipa">
     <div class="content">
       <div id="team">
-        <b-row class=" d-flex justify-content-center">
+        <b-row class="d-flex justify-content-center">
           <div v-for="n in 12" :key="n">
-            <b-col class=" mx-4 teamPhotos1">
+            <b-col class="mx-4 teamPhotos1">
               <img
-                class="rounded-circle "
+                class="rounded-circle"
                 id="teamPhoto"
                 src="../assets/Grupo 10.png"
               />
@@ -16,6 +16,32 @@
             </b-col>
           </div>
         </b-row>
+        <div v-if="detectScroll()">
+          <span id="teamScrollIcon" class=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="
+                bi bi-chevron-double-down
+                animate__animated
+                animate__heartBeat
+                animate__slower
+                animate__infinite
+              "
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              /></svg
+          ></span>
+        </div>
       </div>
     </div>
   </div>
@@ -60,6 +86,10 @@
 .teamPhotos1:hover .overlay {
   opacity: 1;
 }
+#teamScrollIcon {
+  color: white;
+  
+}
 </style>
 <script>
 //angela alves- cantora
@@ -73,5 +103,30 @@
 //angela marques - atriz
 //ana paula sousa - direção de cena
 //nuno almeida - tecnico de luz
-//sandra carneiro - produção
+//sandra carneiro - produção~
+export default {
+  name: "Equipa",
+  components: {},
+  data() {
+    return {
+      send: {
+        typeOfferId: "",
+        areaId: "",
+        name: "",
+      },
+      checkedType: [],
+      checkedArea: [],
+    };
+  },
+  methods: {
+    detectScroll() {
+      window.onscroll = function (e) {
+        // print "false" if direction is down and "true" if up
+        console.log(this.oldScroll > this.scrollY);
+        this.oldScroll = this.scrollY;
+      };
+      return window.onscroll;
+    },
+  },
+};
 </script>
