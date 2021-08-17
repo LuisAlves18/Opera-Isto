@@ -55,7 +55,7 @@
   height: 25vh;
 }
 .teamPhotos1:hover #teamPhoto {
-  opacity: 0.3;
+  opacity: 0.45;
 }
 .teamPhotos1:hover .overlay {
   opacity: 1;
