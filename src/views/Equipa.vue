@@ -16,7 +16,7 @@
             </b-col>
           </div>
         </b-row>
-        <div v-if="detectScroll()">
+        <div v-if="newScroll">
           <span id="teamScrollIcon" class=""
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,23 +109,26 @@ export default {
   components: {},
   data() {
     return {
-      send: {
-        typeOfferId: "",
-        areaId: "",
-        name: "",
-      },
-      checkedType: [],
-      checkedArea: [],
+      
+     newScroll: false,
     };
+  },
+  created () {
+    window.addEventListener('scroll', this.detectScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.detectScroll);
   },
   methods: {
     detectScroll() {
-      window.onscroll = function (e) {
+      
+      window.onscroll = function () {
         // print "false" if direction is down and "true" if up
-        console.log(this.oldScroll > this.scrollY);
+        this.newScroll=this.oldScroll > this.scrollY
+        console.log(this.newScroll);
         this.oldScroll = this.scrollY;
       };
-      return window.onscroll;
+      
     },
   },
 };

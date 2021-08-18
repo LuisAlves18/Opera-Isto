@@ -37,7 +37,8 @@ export default {
 
 <style>
 .navbar{
-  margin: 0; 
+  margin:0;
+  margin-left:3vw; 
   padding:0;
 }
 #logo {
