@@ -4,7 +4,7 @@ import Home from "@/views/Home.vue";
 import Agenda from "@/views/Agenda.vue";
 import Edicoes from "@/views/Edicoes.vue";
 import Educacao from "@/views/Educacao.vue";
-import Espetaculos from "@/views/Espetaculos.vue";
+import Criacoes from "@/views/Criacoes.vue";
 import Equipa from "@/views/Equipa.vue";
 
 
@@ -31,9 +31,9 @@ const routes = [{
         component: Educacao
     },
     {
-        path: "/espetaculos",
-        name: "Espetaculos",
-        component: Espetaculos
+        path: "/criacoes",
+        name: "Criacoes",
+        component: Criacoes
     },
     {
         path: "/equipa",

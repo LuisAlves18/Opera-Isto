@@ -3,15 +3,41 @@
     <div class="content">
       <div id="team">
         <b-row class="d-flex justify-content-center">
-          <div v-for="n in 12" :key="n">
+          <div v-for="elem in this.$store.state.team" :key="elem.id">
             <b-col class="mx-4 teamPhotos1">
               <img
                 class="rounded-circle"
                 id="teamPhoto"
-                src="../assets/Grupo 10.png"
+                :src="require(elem.foto)"
               />
               <div class="overlay">
-                <div class="text">Hello World</div>
+                <div class="text">
+                  <b-button
+                    style="
+                      background-color: transparent;
+                      outline: none !important;
+                      box-shadow: none;
+                    "
+                    id="modalbtn"
+                    v-b-modal:[`example-modal-${elem.id}`]
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-info-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+                      /></svg
+                  ></b-button>
+                  <b-modal :id="`example-modal-${elem.id}`"><p>{{elem.nome}}</p> </b-modal>
+                </div>
+              </div>
+              <p>{{elem.nome}}</p>
+              <div>
+                <div></div>
               </div>
             </b-col>
           </div>
@@ -47,8 +73,12 @@
   </div>
 </template>
 <style>
+p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+}
 #team {
-  background-image: url("../assets/cadeiras-teatro.jpg");
+  /* background-image: url("../assets/cadeiras-teatro.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -61,9 +91,9 @@
   height: 20vh;
   width: 20vh;
   margin-top: -20vh;
-  margin-left: 2.5vw;
+  margin-left: 3.5vw;
   margin-right: 0vw;
-  transition: 0.5s ease-in;
+
   background-color: rgb(rgb(165, 55, 55));
 
   border-radius: 100px;
@@ -81,17 +111,19 @@
   height: 25vh;
 }
 .teamPhotos1:hover #teamPhoto {
-  opacity: 0.45;
+  opacity: 1;
 }
 .teamPhotos1:hover .overlay {
   opacity: 1;
 }
+.btn:focus {
+}
 #teamScrollIcon {
   color: white;
-  
 }
 </style>
 <script>
+//4-5-4
 //angela alves- cantora
 //miguel reis- cantor
 //gabriel neves - cantor
@@ -103,32 +135,31 @@
 //angela marques - atriz
 //ana paula sousa - direção de cena
 //nuno almeida - tecnico de luz
-//sandra carneiro - produção~
+//sandra carneiro - produção
+//Ana Nogueira - Figurinos
 export default {
   name: "Equipa",
   components: {},
   data() {
     return {
+      newScroll: false,
       
-     newScroll: false,
     };
   },
-  created () {
-    window.addEventListener('scroll', this.detectScroll);
+  created() {
+    window.addEventListener("scroll", this.detectScroll);
   },
-  destroyed () {
-    window.removeEventListener('scroll', this.detectScroll);
+  destroyed() {
+    window.removeEventListener("scroll", this.detectScroll);
   },
   methods: {
     detectScroll() {
-      
       window.onscroll = function () {
         // print "false" if direction is down and "true" if up
-        this.newScroll=this.oldScroll > this.scrollY
+        this.newScroll = this.oldScroll > this.scrollY;
         console.log(this.newScroll);
         this.oldScroll = this.scrollY;
       };
-      
     },
   },
 };
