@@ -3,15 +3,19 @@
     <b-container>
       <h1 id="criacaoTitleOne">Em Circulação</h1>
       <!-- <b-card-group deck id="show-deck"> -->
-        <b-row>
-          
-            <b-col
-              class="mt-4 col-xl-12 col-lg-6 col-md-12 col-sm-12"
-              v-for="n in 5"
-              :key="n"
-              ><h1 class="d-flex justify-content-center">Nome</h1></b-col>
-          
-          <!-- <b-col
+      <b-row>
+        <b-col
+          class="mt-3 col-xl-6 col-lg-6 col-md-12 col-sm-12"
+          v-for="criacao in this.$store.state.shows"
+          :key="criacao.id"
+          ><h1
+            class="animate__animated d-flex justify-content-center criacaoName"
+          >
+            {{ criacao.name }}
+          </h1></b-col
+        >
+
+        <!-- <b-col
             class="col-xl-12 col-lg-6 col-md-12 col-sm-12"
             v-for="n in 2"
             :key="n"
@@ -94,7 +98,7 @@
               </b-card-text>
             </b-card>
           </b-col> -->
-        </b-row>
+      </b-row>
       <!-- </b-card-group> -->
     </b-container>
   </div>
@@ -103,12 +107,21 @@
 <script>
 export default {
   name: "Criacoes",
+  created() {},
 };
 </script>
 
 <style>
-#criacaoTitleOne{
-  margin-bottom:5vh;
+.criacaoName {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+}
+.criacaoName:hover {
+  animation: bounce;
+  --animation-duration: 2s;
+}
+#criacaoTitleOne {
+  margin-bottom: 5vh;
 }
 .show-card span svg {
   opacity: 0;

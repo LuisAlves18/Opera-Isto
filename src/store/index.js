@@ -26,29 +26,37 @@ export default new Vuex.Store({
         }],
         shows: [{
                 id: 1,
-                name: "O que é uma Ária?"
+                name: "O que é uma Ária?",
+                ativo: true,
             }, {
                 id: 2,
-                name: "Alibábá e as 40 Canções"
+                name: "Alibábá e as 40 Canções",
+                ativo: true,
             }, {
                 id: 3,
-                name: "To be or not to Britten"
+                name: "To be or not to Britten",
+                ativo: true,
             }, {
                 id: 4,
-                name: "A Rolha da Garrafa do Rei D’Aonde?"
+                name: "A Rolha da Garrafa do Rei D’Aonde?",
+                ativo: true,
             }, {
                 id: 5,
-                name: "A Flauta Mágica vista da Lua"
+                name: "A Flauta Mágica vista da Lua",
+                ativo: true,
             }, {
                 id: 6,
-                name: "Pica-Pau Amarelo"
+                name: "Pica-Pau Amarelo",
+                ativo: true,
             }, {
                 id: 7,
-                name: "O Olho Esquerdo de Júlio Verne"
+                name: "O Olho Esquerdo de Júlio Verne",
+                ativo: true,
             },
             {
                 id: 8,
-                name: "Serena Serenata"
+                name: "Serena Serenata",
+                ativo: true,
             }
         ],
         workshops: [{
@@ -60,63 +68,75 @@ export default new Vuex.Store({
         team: [{
             id: 1,
             nome: 'Alexandre Reis',
+            photoName: 'alexandre-reis',
             funcao: 'Flautista',
-            foto: '../assets/alexandre-reis.jpg'
+            bio: "",
         }, {
             id: 2,
             nome: 'Ângela Alves',
+            photoName: 'angela-alves',
             funcao: 'Cantora',
-            foto: '../assets/angela-alves.jpg'
+            bio: "",
         }, {
             id: 3,
             nome: 'Ângela Marques',
+            photoName: 'angela-marques',
             funcao: 'Cantora',
-            foto: '../assets/angela-marques.jpg'
+            bio: "",
         }, {
             id: 4,
             nome: 'David Lloyd',
+            photoName: 'david-lloyd',
             funcao: 'Violinista',
-            foto: '../assets/david.jpg'
+            bio: "",
         }, {
             id: 5,
             nome: 'Gabriel Neves',
-            funcao: 'Cantora',
-            foto: '../assets/gabriel-neves.jpg'
+            photoName: 'gabriel-neves',
+            funcao: 'Cantor',
+            bio: "",
         }, {
             id: 6,
             nome: 'João Tiago',
+            photoName: 'joao-tiago',
             funcao: 'Pianista',
-            foto: '../assets/joao-tiago.jpg'
+            bio: "",
         }, {
             id: 7,
             nome: 'Mário Alves',
+            photoName: 'maria-alves',
             funcao: 'Cantor',
-            foto: '../assets/mario-alves.jpg'
+            bio: "",
         }, {
             id: 8,
             nome: 'Miguel Reis',
+            photoName: 'miguel-reis',
             funcao: 'Cantor',
-            foto: '../assets/miguel-reis.jpg'
+            bio: "",
         }, {
             id: 9,
-            nome: 'angela alves',
+            nome: 'Paulina Machado',
+            photoName: 'paulina-machado',
             funcao: 'cantora',
-            foto: '../assets/back.jpg'
+
         }, {
             id: 10,
-            nome: 'angela alves',
+            nome: 'Ângela Alves',
+            photoName: 'angela-alves',
             funcao: 'cantora',
-            foto: '../assets/back.jpg'
+            bio: "",
         }, {
             id: 11,
-            nome: 'angela alves',
+            nome: 'Ângela Alves',
+            photoName: 'angela-alves',
             funcao: 'cantora',
-            foto: '../assets/back.jpg'
+            bio: "",
         }, {
             id: 12,
-            nome: 'angela alves',
+            nome: 'Ângela Alves',
+            photoName: 'angela-alves',
             funcao: 'cantora',
-            foto: '../assets/back.jpg'
+            bio: "",
         }, ]
     },
 

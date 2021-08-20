@@ -57,13 +57,12 @@ export default {
 }
 #logo {
   margin: 0px;
-  margin-right: 5vw;
-  width: 7vw;
+  margin-right: 2vw;
+  width: 8vw;
 }
-.navRouter,
-#dropdown {
-  margin-left: 5vw;
-  margin-right: 5vw;
+.navRouter{
+  margin-left: 4vw;
+  margin-right: 4vw;
   color: #e8eaed;
   font-size: 1.5rem;
   font-family: Oswald extralight;

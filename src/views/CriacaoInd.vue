@@ -11,9 +11,8 @@
 <script>
 
 
-export default CriacaoInd({
-    setup() {
-        
-    },
-})
+export default {
+  name: "CriacoesInd",
+  
+};
 </script>

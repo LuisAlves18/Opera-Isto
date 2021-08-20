@@ -8,16 +8,12 @@
               <img
                 class="rounded-circle"
                 id="teamPhoto"
-                :src="require(elem.foto)"
+                :src="require(`../assets/equipa/${elem.photoName}.jpg`)"
               />
               <div class="overlay">
                 <div class="text">
                   <b-button
-                    style="
-                      background-color: transparent;
-                      outline: none !important;
-                      box-shadow: none;
-                    "
+                    style="background-color: transparent"
                     id="modalbtn"
                     v-b-modal:[`example-modal-${elem.id}`]
                     ><svg
@@ -32,10 +28,20 @@
                         d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
                       /></svg
                   ></b-button>
-                  <b-modal :id="`example-modal-${elem.id}`"><p>{{elem.nome}}</p> </b-modal>
+                  <b-modal
+                    ok-only
+                    classes=" teamModal"
+                    body-bg-variant="dark"
+                    header-bg-variant="dark"
+                    hide-footer
+                    centered
+                    :title="`${elem.nome}`"
+                    :id="`example-modal-${elem.id}`"
+                    ><p>{{ elem.nome }}</p>
+                  </b-modal>
                 </div>
               </div>
-              <p>{{elem.nome}}</p>
+              <p>{{ elem.nome }}</p>
               <div>
                 <div></div>
               </div>
@@ -85,7 +91,7 @@ p {
   min-height: 100vh;
   height: auto;
   width: 100vw;
-  margin-top: -18vh;
+  margin-top: -9vh;
 }
 .overlay {
   height: 20vh;
@@ -104,11 +110,11 @@ p {
   padding-top: 10vh;
 }
 .teamPhotos1 {
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 #teamPhoto {
-  height: 25vh;
+  height: 22vh;
 }
 .teamPhotos1:hover #teamPhoto {
   opacity: 1;
@@ -120,6 +126,9 @@ p {
 }
 #teamScrollIcon {
   color: white;
+}
+.teamModal {
+  background-color: #222222 !important;
 }
 </style>
 <script>
@@ -143,7 +152,6 @@ export default {
   data() {
     return {
       newScroll: false,
-      
     };
   },
   created() {
@@ -160,6 +168,11 @@ export default {
         console.log(this.newScroll);
         this.oldScroll = this.scrollY;
       };
+    },
+    getNewNameByName(name) {
+      let newName = name.replace(" ", "-");
+      console.log(newName);
+      return newName;
     },
   },
 };
