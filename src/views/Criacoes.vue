@@ -115,10 +115,12 @@ export default {
 .criacaoName {
   font-family: "Titillium Web", sans-serif;
   font-weight: 200;
+  
 }
 .criacaoName:hover {
+   cursor: pointer;
   animation: bounce;
-  --animation-duration: 2s;
+  animation-duration: 1s;
 }
 #criacaoTitleOne {
   margin-bottom: 5vh;

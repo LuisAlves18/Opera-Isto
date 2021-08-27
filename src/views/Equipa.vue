@@ -13,7 +13,7 @@
               <div class="overlay">
                 <div class="text">
                   <b-button
-                    style="background-color: transparent"
+                    style="background-color: transparent; border:none"
                     id="modalbtn"
                     v-b-modal:[`example-modal-${elem.id}`]
                     ><svg
@@ -41,7 +41,7 @@
                   </b-modal>
                 </div>
               </div>
-              <p>{{ elem.nome }}</p>
+              <p class="mt-3">{{ elem.nome }}</p>
               <div>
                 <div></div>
               </div>
@@ -122,8 +122,7 @@ p {
 .teamPhotos1:hover .overlay {
   opacity: 1;
 }
-.btn:focus {
-}
+
 #teamScrollIcon {
   color: white;
 }
