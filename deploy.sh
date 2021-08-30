@@ -17,6 +17,6 @@ git commit -m 'deploy'
 
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:luisalves18/Opera-Isto.git master:gh-pages
+git push -f https://github.com/LuisAlves18/Opera-Isto.git master:gh-pages
 
 cd -
