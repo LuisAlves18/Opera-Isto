@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="content">
-      <section class="background">
+      <section class="background d-flex justify-content-center">
         <b-button
           class="transparent animate__animated animate__flip animate__slower animate__infinite"
           href="#next-shows"
