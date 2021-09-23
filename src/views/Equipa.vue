@@ -79,10 +79,7 @@
   </div>
 </template>
 <style>
-p {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 200;
-}
+
 #team {
   /* background-image: url("../assets/cadeiras-teatro.jpg"); */
   background-repeat: no-repeat;

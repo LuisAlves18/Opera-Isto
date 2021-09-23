@@ -1,5 +1,5 @@
 <template>
-  <div class="edicoes">
+  <div class="marioJoaoAlves">
       <b-container>
 
       </b-container>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: "Edicoes"
+    name: "MarioJoaoAlves"
 }
 </script>
 

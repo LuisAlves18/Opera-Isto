@@ -26,7 +26,7 @@
       </section>
       <div>
         <div>
-          <h2>Próximas Datas</h2>
+          <h2 id="proximasDatas">Próximas Datas</h2>
           <section id="next-shows">
             <b-card-group deck id="show-deck">
               <b-row class="mt-1 mb-2  border-0  justify-content-center">
@@ -38,7 +38,7 @@
                     style="height:11rem; background-color:#202124"
                     img-left
                   >
-                    <b-card-text>
+                    <b-card-text style="color:white">
                       Some quick example text to build on the card and make up
                       the bulk of the card's content.
                     </b-card-text>
@@ -49,10 +49,10 @@
                     class="text-center border-danger mt-1 mb-1"
                     img-src="https://res.cloudinary.com/dsfbhbeyt/image/upload/v1628263066/opera%20isto/foto_mz8wof.webp"
                     img-alt="Card image"
-                    style="height:11rem; background-color:#202124"
+                    style="height:11rem; background-color:#202124; color:white"
                     img-left
                   >
-                    <b-card-text>
+                    <b-card-text style="color:white">
                       Some quick example text to build on the card and make up
                       the bulk of the card's content.
                     </b-card-text>
@@ -73,6 +73,9 @@ export default {
 };
 </script>
 <style>
+.home{
+  background-color:#202124
+}
 .background {
   
   background-image: url("https://res.cloudinary.com/dsfbhbeyt/image/upload/v1628173349/A-rolha-da-garrafa-12_rm6lj1.webp");
@@ -90,6 +93,9 @@ export default {
   border: none;
   outline: none;
   box-shadow: none;
+}
+#proximasDatas{
+  color:white; 
 }
 
 /* @media only screen and (min-width: 1920px) {

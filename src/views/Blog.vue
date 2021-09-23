@@ -1,5 +1,5 @@
 <template>
-  <div class="educacao">
+  <div class="blog">
       <b-container>
 
       </b-container>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: "Educacao"
+    name: "Blog"
 }
 </script>
 

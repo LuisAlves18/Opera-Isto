@@ -1,7 +1,6 @@
 <template>
   <div class="agenda">
     <b-container>
-      
         <section class="mb-2 mt-1"
           v-for="spetacle in this.$store.state.spetacles"
           :key="spetacle.id"

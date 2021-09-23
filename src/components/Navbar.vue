@@ -10,30 +10,35 @@
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
+            <b-nav-item-dropdown class="drowpdown" text="Sobre">
+              <b-dropdown-item ><router-link class="navRouter" :to="{ name: 'Companhia' }"
+                >Companhia</router-link
+              ></b-dropdown-item>
+              <b-dropdown-item ><router-link class="navRouter" :to="{ name: 'MarioJoaoAlves' }"
+                >Mário João Alves</router-link
+              ></b-dropdown-item>
+              <b-dropdown-item ><router-link class="navRouter" :to="{ name: 'Equipa' }"
+                >Equipa</router-link
+              ></b-dropdown-item>
+            </b-nav-item-dropdown>
             <b-nav-item
               ><router-link class="navRouter" :to="{ name: 'Agenda' }"
-                >AGENDA</router-link
+                >Agenda</router-link
               ></b-nav-item
             >
             <b-nav-item
-              ><router-link class="navRouter" :to="{ name: 'Criacoes' }"
-                >CRIAÇÕES</router-link
-              ></b-nav-item
-            >
-
-            <b-nav-item
-              ><router-link class="navRouter" :to="{ name: 'Edicoes' }"
-                >EDIÇÕES</router-link
+              ><router-link class="navRouter" :to="{ name: 'Invencoes' }"
+                >Invenções</router-link
               ></b-nav-item
             >
             <b-nav-item
-              ><router-link class="navRouter" :to="{ name: 'Educacao' }"
-                >EDUCAÇÃO</router-link
+              ><router-link class="navRouter" :to="{ name: 'Contactos' }"
+                >Contactos</router-link
               ></b-nav-item
             >
             <b-nav-item
-              ><router-link class="navRouter" :to="{ name: 'Equipa' }"
-                >EQUIPA</router-link
+              ><router-link class="navRouter" :to="{ name: 'Blog' }"
+                >Blog</router-link
               ></b-nav-item
             >
           </b-navbar-nav>
@@ -52,7 +57,7 @@ export default {
 <style>
 .navbar {
   margin: 0;
-  margin-left: 3vw;
+  margin-left: 1vw;
   padding: 0;
 }
 #logo {
@@ -60,12 +65,22 @@ export default {
   margin-right: 2vw;
   width: 8vw;
 }
-.navRouter{
+.navRouter:hover{
+ color:black
+}
+.navRouter:focus{
+  outline:none !important
+}
+.navRouter,.drowpdown,.dropdown-toggle span,.dropdown-toggle::after{
   margin-left: 4vw;
   margin-right: 4vw;
-  color: #e8eaed;
+  color: black;
   font-size: 1.5rem;
   font-family: Oswald extralight;
   text-decoration: None !important;
+}
+.dropdown-toggle span,.dropdown-toggle::after{
+  margin-left:0;
+  margin-right:0
 }
 </style>

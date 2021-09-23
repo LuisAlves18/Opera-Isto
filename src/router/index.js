@@ -1,50 +1,67 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "@/views/Home.vue";
-import Agenda from "@/views/Agenda.vue";
-import Edicoes from "@/views/Edicoes.vue";
-import Educacao from "@/views/Educacao.vue";
-import Criacoes from "@/views/Criacoes.vue";
+
+import Companhia from "@/views/Companhia.vue";
+import MarioJoaoAlves from "@/views/MarioJoaoAlves.vue";
 import Equipa from "@/views/Equipa.vue";
 
+import Agenda from "@/views/Agenda.vue";
+
+import Invencoes from "@/views/Invencoes.vue";
+
+import Contactos from "@/views/Contactos.vue";
+
+import Blog from "@/views/Blog.vue";
 
 Vue.use(VueRouter);
 
-const routes = [{
-        path: "/",
-        name: "Home",
-        component: Home
-    },
-    {
-        path: "/agenda",
-        name: "Agenda",
-        component: Agenda
-    },
-    {
-        path: "/edicoes",
-        name: "Edicoes",
-        component: Edicoes
-    },
-    {
-        path: "/educacao",
-        name: "Educacao",
-        component: Educacao
-    },
-    {
-        path: "/criacoes",
-        name: "Criacoes",
-        component: Criacoes
-    },
-    {
-        path: "/equipa",
-        name: "Equipa",
-        component: Equipa
-    }
+const routes = [
+  {
+    path: "/",
+    name: "Home",
+    component: Home,
+  },
+  {
+    path: "/companhia",
+    name: "Companhia",
+    component: Companhia,
+  },
+  {
+    path: "/marioJoaoAlves",
+    name: "MarioJoaoAlves",
+    component: MarioJoaoAlves,
+  },
+  {
+    path: "/equipa",
+    name: "Equipa",
+    component: Equipa,
+  },
+  {
+    path: "/agenda",
+    name: "Agenda",
+    component: Agenda,
+  },
+  {
+    path: "/invencoes",
+    name: "Invencoes",
+    component: Invencoes,
+  },
+  {
+    path: "/contactos",
+    name: "Contactos",
+    component: Contactos,
+  },
 
+  {
+    path: "/blog",
+    name: "Blog",
+    component: Blog,
+  },
 ];
 
 const router = new VueRouter({
-    routes
+  routes,
 });
 
 export default router;

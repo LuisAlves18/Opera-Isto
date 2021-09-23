@@ -1,5 +1,5 @@
 <template>
-  <div class="criacoes">
+  <div class="invencoes">
     <b-container>
       <h1 id="criacaoTitleOne">Em Circulação</h1>
       <!-- <b-card-group deck id="show-deck"> -->
@@ -106,7 +106,7 @@
 
 <script>
 export default {
-  name: "Criacoes",
+  name: "Invencoes",
   created() {},
 };
 </script>
