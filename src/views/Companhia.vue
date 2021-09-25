@@ -106,7 +106,8 @@ export default {};
   margin-top: 12vh;
 }
 .title {
-  font-family: "Varela", sans-serif;
+  
+  font-weight:400 !important;
   font-size: 1.5rem;
 }
 ul {

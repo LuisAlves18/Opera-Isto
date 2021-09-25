@@ -37,7 +37,7 @@ h5,
 h6 {
  
   font-family: "Oswald", sans-serif !important;
-  font-weight: 300 !important;
+  
   color: black !important;
    
 }
