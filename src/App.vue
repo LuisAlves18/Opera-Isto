@@ -24,7 +24,7 @@ html {
 }
 #app {
   background-color: white;
-  font-family: 'Titillium Web', sans-serif;;
+  font-family: 'Varela', sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
@@ -36,15 +36,15 @@ h4,
 h5,
 h6 {
  
-  font-family: "Oswald", sans-serif;
-  font-weight: 300;
-  color: black;
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 300 !important;
+  color: black !important;
    
 }
 p {
-  font-family: 'Varela', sans-serif;;
-  font-weight: 400;
-  color: black;
+  font-family: 'Varela', sans-serif !important;
+  font-weight: 400 !important;
+  color: black !important;
 }
 
 </style>

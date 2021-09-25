@@ -77,14 +77,13 @@ export default {
   background-color:#202124
 }
 .background {
-  
   background-image: url("https://res.cloudinary.com/dsfbhbeyt/image/upload/v1628173349/A-rolha-da-garrafa-12_rm6lj1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100vw;
-  margin-top:-18vh;
+  margin-top:0;
   padding-left:-11vw;
 }
 #landingScroll {

@@ -2,7 +2,9 @@
   <div class="companhia">
     <b-container>
       <b-row align-v="center" class="mt-5">
-        <b-col sm="12" md="6" lg="6" xl="6"><h6 class="title">O que é ISTO?</h6></b-col>
+        <b-col sm="12" md="6" lg="6" xl="6"
+          ><h6 class="title">O que é ISTO?</h6></b-col
+        >
         <b-col sm="12" md="6" lg="6" xl="6"
           ><p>
             Sé há espectáculos que nascem de Companhias, esta Companhia nasceu
@@ -17,7 +19,9 @@
       </b-row>
 
       <b-row align-v="center" class="mt-5">
-        <b-col sm="12" md="6" lg="6" xl="6"><h6 class="title">O que criámos com ISTO…</h6></b-col>
+        <b-col sm="12" md="6" lg="6" xl="6"
+          ><h6 class="title">O que criámos com ISTO…</h6></b-col
+        >
         <b-col sm="12" md="6" lg="6" xl="6"
           ><ul>
             <li>
@@ -49,7 +53,11 @@
       </b-row>
 
       <b-row align-v="center" class="mt-5">
-        <b-col><h6 sm="12" md="6" lg="6" xl="6" class="title">Por onde temos passado com ISTO…</h6></b-col>
+        <b-col
+          ><h6 sm="12" md="6" lg="6" xl="6" class="title">
+            Por onde temos passado com ISTO…
+          </h6></b-col
+        >
         <b-col sm="12" md="6" lg="6" xl="6"
           ><p>
             Casa da Música, Porto; Casa da Artes de Famalicão; Teatro Almeida
@@ -66,10 +74,24 @@
         >
       </b-row>
 
-      <b-row align-v="center" class="mt-5"> 
-        <b-col sm="12" md="6" lg="6" xl="6"><h6 class="title">Quem faz disto ISTO…</h6></b-col>
-        <b-col sm="12" md="6" lg="6" xl="6"><p>Ana Isabel Nogueira (figurinos e maquilhagem); Ana Paula Sousa (fundadora, directora de cena); Ângela Alves (soprano); Ângela Marques (actriz); Alexandre Reis (flautista); Associação Fio de Norte (formação); Carolina Magalhães (violinista); David Wyn Lloyd (violinista); Gabriel Neves (tenor); João Tiago Magalhães (fundador, pianista); José Lourenço (fundador, cantor, encenador); Lurdes Gomes (adereços) Mário João Alves (fundador, cantor, encenador); Meninos Cantores da Trofa (coro); Miguel Reis (tenor); Paula Cabral (figurinos); Paulina Sá Machado (soprano); Pedro Saraiva (fotografia e vídeo); Marta Figueroa (vídeo).</p></b-col>
-
+      <b-row align-v="center" class="mt-5">
+        <b-col sm="12" md="6" lg="6" xl="6"
+          ><h6 class="title">Quem faz disto ISTO…</h6></b-col
+        >
+        <b-col sm="12" md="6" lg="6" xl="6"
+          ><p>
+            Ana Isabel Nogueira (figurinos e maquilhagem); Ana Paula Sousa
+            (fundadora, directora de cena); Ângela Alves (soprano); Ângela
+            Marques (actriz); Alexandre Reis (flautista); Associação Fio de
+            Norte (formação); Carolina Magalhães (violinista); David Wyn Lloyd
+            (violinista); Gabriel Neves (tenor); João Tiago Magalhães (fundador,
+            pianista); José Lourenço (fundador, cantor, encenador); Lurdes Gomes
+            (adereços) Mário João Alves (fundador, cantor, encenador); Meninos
+            Cantores da Trofa (coro); Miguel Reis (tenor); Paula Cabral
+            (figurinos); Paulina Sá Machado (soprano); Pedro Saraiva (fotografia
+            e vídeo); Marta Figueroa (vídeo).
+          </p></b-col
+        >
       </b-row>
     </b-container>
   </div>
@@ -80,17 +102,21 @@ export default {};
 </script>
 
 <style>
+.companhia {
+  margin-top: 12vh;
+}
 .title {
+  font-family: "Varela", sans-serif;
   font-size: 1.5rem;
 }
-ul{
-  padding:0
+ul {
+  padding: 0;
 }
 li {
-  margin:0;
+  margin: 0;
   list-style-type: none;
 }
-li p{
-  margin-bottom:0.5vh;
+li p {
+  margin-bottom: 0.5vh;
 }
 </style>

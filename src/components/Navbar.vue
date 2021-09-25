@@ -1,10 +1,10 @@
 <template>
-  <div class="navbar">
-    <b-container class="navbar justify-content-center">
-      <b-navbar toggleable="lg">
+  <div class="Navbar">
+    <b-container >
+      <b-navbar toggleable="lg" class="navbar fixed-top justify-content-center">
         <b-navbar-brand>
           <router-link to="/"
-            ><img id="logo" src="../assets/logo branco opera isto.png"
+            ><img id="logo" src="../assets/logo-operaisto.png"
           /></router-link>
         </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -56,14 +56,13 @@ export default {
 
 <style>
 .navbar {
-  margin: 0;
-  margin-left: 1vw;
-  padding: 0;
+  background-color: transparent;
 }
+
 #logo {
   margin: 0px;
-  margin-right: 2vw;
-  width: 8vw;
+  margin-right:3vw;
+  width: 7vw;
 }
 .navRouter:hover{
  color:black
@@ -76,7 +75,8 @@ export default {
   margin-right: 4vw;
   color: black;
   font-size: 1.5rem;
-  font-family: Oswald extralight;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
   text-decoration: None !important;
 }
 .dropdown-toggle span,.dropdown-toggle::after{
