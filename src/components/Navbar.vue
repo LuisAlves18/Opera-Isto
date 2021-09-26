@@ -56,7 +56,8 @@ export default {
 
 <style>
 .navbar {
-  background-color: transparent;
+  background-color: white;
+ 
 }
 
 #logo {
