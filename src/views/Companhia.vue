@@ -6,7 +6,7 @@
         <b-row align-v="center" class="mt-5">
           <b-col
             order="1"
-            class="d-flex justify-content-center animate__animated animate__fadeInLeft"
+            class="d-flex justify-content-end pr-4 animate__animated animate__fadeInLeft"
             sm="6"
             md="6"
             lg="6"
@@ -15,7 +15,7 @@
           >
           <b-col
             order="2"
-            class="d-flex justify-content-center animate__animated animate__fadeInRight"
+            class="d-flex justify-content-center pl-4 animate__animated animate__fadeInRight"
             sm="6"
             md="6"
             lg="6"
@@ -34,8 +34,9 @@
         <!-- direita -->
         <b-row align-v="center" class="mt-5">
           <b-col
+            style="text-align: right;"
             order="1"
-            class="d-flex justify-content-center animate__animated animate__fadeInLeft animate__delay-1s"
+            class="d-flex justify-content-end pr-4 animate__animated animate__fadeInLeft animate__delay-1s"
             sm="12"
             md="6"
             lg="6"
@@ -69,7 +70,7 @@
           >
           <b-col
             order-md="1"
-            class="d-flex justify-content-center animate__animated animate__fadeInRight animate__delay-1s"
+            class="d-flex justify-content-start pl-4 animate__animated animate__fadeInRight animate__delay-1s"
             sm="12"
             md="6"
             lg="6"
@@ -80,13 +81,14 @@
         <!-- esquerda -->
         <b-row align-v="center" class="mt-5">
           <b-col
-            class="d-flex justify-content-center animate__animated animate__fadeInLeft animate__delay-2s"
+            class="d-flex justify-content-end pr-4 animate__animated animate__fadeInLeft animate__delay-2s"
             ><h6 sm="12" md="6" lg="6" xl="6" class="title">
               Por onde temos passado com ISTO…
             </h6></b-col
           >
           <b-col
-            class="d-flex justify-content-center animate__animated animate__fadeInRight animate__delay-2s"
+            class="d-flex justify-content-start pl-4 animate__animated animate__fadeInRight animate__delay-2s"
+            style="text-align: left;"
             sm="12"
             md="6"
             lg="6"
@@ -107,7 +109,14 @@
         </b-row>
         <!-- direita -->
         <b-row align-v="center" class="mt-5">
-          <b-col class="d-flex justify-content-center" order="1" sm="12" md="6" lg="6" xl="6"
+          <b-col
+          style="text-align: right;"
+            class="d-flex justify-content-center pr-4"
+            order="1"
+            sm="12"
+            md="6"
+            lg="6"
+            xl="6"
             ><p>
               Ana Isabel Nogueira (figurinos e maquilhagem); Ana Paula Sousa
               (fundadora, directora de cena); Ângela Alves (soprano); Ângela
@@ -122,7 +131,9 @@
             </p></b-col
           >
           <b-col order-md="1" sm="12" md="6" lg="6" xl="6"
-            ><h6 class="title d-flex justify-content-center">Quem faz disto ISTO…</h6></b-col
+            ><h6 class="title d-flex justify-content-start pl-4">
+              Quem faz disto ISTO…
+            </h6></b-col
           >
         </b-row>
       </div>
