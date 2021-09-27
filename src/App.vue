@@ -11,7 +11,11 @@ export default {
   components: {
     Navbar,
   },
-
+  watch: {
+  $route(to) {
+     document.title = `Opera Isto - ${to.meta.title}`;
+  }
+}
   
 };
 </script>

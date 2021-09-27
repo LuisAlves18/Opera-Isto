@@ -21,42 +21,66 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta:{
+      title:"Home",
+    }
   },
   {
     path: "/companhia",
     name: "Companhia",
     component: Companhia,
+    meta:{
+      title:"Companhia"
+    }
   },
   {
     path: "/marioJoaoAlves",
     name: "MarioJoaoAlves",
     component: MarioJoaoAlves,
+    meta:{
+      title:"Mario Joao Alves"
+    }
   },
   {
     path: "/equipa",
     name: "Equipa",
     component: Equipa,
+    meta:{
+      title:"Equipa"
+    }
   },
   {
     path: "/agenda",
     name: "Agenda",
     component: Agenda,
+    meta:{
+      title:"Agenda"
+    }
   },
   {
     path: "/invencoes",
     name: "Invencoes",
     component: Invencoes,
+    meta:{
+      title:"Invenções"
+    }
   },
   {
     path: "/contactos",
     name: "Contactos",
     component: Contactos,
+    meta:{
+      title:"Contactos"
+    }
   },
 
   {
     path: "/blog",
     name: "Blog",
     component: Blog,
+    meta:{
+      title:"Blog"
+    }
   },
 ];
 
