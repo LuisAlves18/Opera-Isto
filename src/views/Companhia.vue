@@ -6,16 +6,16 @@
         <b-row align-v="center" class="mt-5">
           <b-col
             order="1"
-            class="d-flex justify-content-end pr-4 animate__animated animate__fadeInLeft"
+            class="d-flex justify-content-center justify-content-md-end  pr-4 animate__animated animate__fadeInLeft"
             sm="6"
             md="6"
             lg="6"
             xl="6"
-            ><h6 class="title ">O que é ISTO?</h6></b-col
+            ><h6 class="title">O que é ISTO?</h6></b-col
           >
           <b-col
             order="2"
-            class="d-flex justify-content-center pl-4 animate__animated animate__fadeInRight"
+            class="d-flex justify-content-center text-center text-md-left pl-4 animate__animated animate__fadeInRight"
             sm="6"
             md="6"
             lg="6"
@@ -34,9 +34,8 @@
         <!-- direita -->
         <b-row align-v="center" class="mt-5">
           <b-col
-            style="text-align: right;"
             order="1"
-            class="d-flex justify-content-end pr-4 animate__animated animate__fadeInLeft animate__delay-1s"
+            class="d-flex justify-content-end text-center text-md-right pr-4 animate__animated animate__fadeInLeft animate__delay-1s"
             sm="12"
             md="6"
             lg="6"
@@ -70,7 +69,7 @@
           >
           <b-col
             order-md="1"
-            class="d-flex justify-content-start pl-4 animate__animated animate__fadeInRight animate__delay-1s"
+            class="d-flex justify-content-center justify-content-md-start pl-4 animate__animated animate__fadeInRight animate__delay-1s"
             sm="12"
             md="6"
             lg="6"
@@ -81,14 +80,13 @@
         <!-- esquerda -->
         <b-row align-v="center" class="mt-5">
           <b-col
-            class="d-flex justify-content-end pr-4 animate__animated animate__fadeInLeft animate__delay-2s"
+            class="d-flex justify-content-center text-center justify-content-md-end pr-4 animate__animated animate__fadeInLeft animate__delay-2s"
             ><h6 sm="12" md="6" lg="6" xl="6" class="title">
               Por onde temos passado com ISTO…
             </h6></b-col
           >
           <b-col
-            class="d-flex justify-content-start pl-4 animate__animated animate__fadeInRight animate__delay-2s"
-            style="text-align: left;"
+            class="d-flex justify-content-start text-center text-md-left pl-4 animate__animated animate__fadeInRight animate__delay-2s"
             sm="12"
             md="6"
             lg="6"
@@ -110,8 +108,7 @@
         <!-- direita -->
         <b-row align-v="center" class="mt-5">
           <b-col
-          style="text-align: right;"
-            class="d-flex justify-content-center pr-4"
+            class="d-flex justify-content-center text-center text-md-right pr-4"
             order="1"
             sm="12"
             md="6"
@@ -131,7 +128,9 @@
             </p></b-col
           >
           <b-col order-md="1" sm="12" md="6" lg="6" xl="6"
-            ><h6 class="title d-flex justify-content-start pl-4">
+            ><h6
+              class="title d-flex justify-content-center justify-content-md-start pl-4"
+            >
               Quem faz disto ISTO…
             </h6></b-col
           >
