@@ -22,7 +22,28 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius:100vw;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background-color: rgb(193,193,193);
+  border-radius:100vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(225,32,39);
+   border-radius:100vw;
+}
 html {
   background-color: white;
   margin:0;
