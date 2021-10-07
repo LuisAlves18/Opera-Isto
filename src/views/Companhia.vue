@@ -2,8 +2,10 @@
   <div class="companhia">
     <b-container>
       <div>
+        
         <!-- esquerda -->
         <b-row align-v="center" class="mt-5">
+          
           <b-col
             order="1"
             class="d-flex justify-content-center justify-content-md-end  pr-4 animate__animated animate__fadeInLeft"
