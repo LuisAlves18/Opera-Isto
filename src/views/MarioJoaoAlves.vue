@@ -2,15 +2,15 @@
   <div class="marioJoaoAlves">
     <b-container>
       <b-row>
-        <b-col cols="12" class="d-flex justify-content-center"
+        <b-col cols="12" class="d-flex justify-content-center animate__animated animate__fadeInDown animate__slow"
           ><h2>Mário João Alves</h2>
         </b-col>
 
-        <b-col class="d-flex mt-5"
-          ><b-img src="http://via.placeholder.com/500x650"></b-img>
+        <b-col sm="12" lg="6" class="d-flex mt-4 justify-content-center animate__animated animate__fadeInLeft "
+          ><b-img class="mjaImg animate-repeat-1" rounded  fluid src="https://scontent.fopo3-1.fna.fbcdn.net/v/t1.6435-9/140177665_3630843806964939_7724057820822080563_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=174925&_nc_ohc=8epta3RF3tkAX8z_Tey&_nc_oc=AQkRYmAMtkzueRLVDKjjx9ZjIzlqGZoGxPffYykybzppe5Ofp1U38riKg4KaIToOGZ8&tn=PD5iaImch32RjQVT&_nc_ht=scontent.fopo3-1.fna&oh=3ec985bfb3405305334695c778cee73b&oe=618498B6"></b-img>
         </b-col>
-        <b-col
-          ><p class="d-flex mt-4 text-justify">
+        <b-col sm="12" lg="6" class="d-flex mt-4 justify-content-center text-justify animate__animated animate__fadeInRight"
+          ><p>
             Mário João Alves é o autor dos textos e encenador da companhia.
             Cantor, é presença assídua no Teatro Nacional de São Carlos e
             colabora com a generalidade das instituições musicais em Portugal.
@@ -56,5 +56,18 @@ export default {
 <style>
 .marioJoaoAlves {
   margin-top: 15vh;
+  
 }
+.mjaImg{
+  
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.mjaImg:hover{
+  
+   filter: grayscale(0%);
+   animation-duration: 1s;
+}
+   
+
 </style>
