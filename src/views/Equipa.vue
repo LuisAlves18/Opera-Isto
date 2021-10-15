@@ -79,7 +79,9 @@
   </div>
 </template>
 <style>
-
+.equipa{
+  margin-top:15vh;
+}
 #team {
   /* background-image: url("../assets/cadeiras-teatro.jpg"); */
   background-repeat: no-repeat;

@@ -1,8 +1,153 @@
+/*
 <template>
   <div class="invencoes">
     <b-container>
-      <h1 id="criacaoTitleOne">Em Circulação</h1>
-      <!-- <b-card-group deck id="show-deck"> -->
+      <b-row class="d-flex justify-content-md-center mb-5">
+        <b-col sm="12" md="4" class="justify-content-center"
+          ><b-button id="invBtn" variant="outline-danger" v-on:click="showSpe()"
+            >Espetáculos</b-button
+          ></b-col
+        >
+        <b-col sm="12" md="4"
+          ><b-button class="invBtn" v-on:click="showEd()"
+            >Edições</b-button
+          ></b-col
+        >
+        <b-col sm="12" md="4"
+          ><b-button class="invBtn" v-on:click="showForm()"
+            >Formações</b-button
+          ></b-col
+        >
+      </b-row>
+      <div v-if="showSpet">
+        <b-row align-h="center" class="d-flex  mt-5">
+          <b-row align-h="center" class="d-flex  mt-5">
+            <b-col sm="12" md="3">
+              <b-row>
+                <b-col sm="12" md="9" class="d-flex">
+                  <div class="invSpeImgDia">
+                    <b-img
+                      fluid
+                      class="invSpeImg"
+                      src="https://scontent.fopo3-1.fna.fbcdn.net/v/t1.6435-9/52913776_2201119723475306_5311530396482011136_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=BP34Qd4hoNsAX9JKcHK&_nc_ht=scontent.fopo3-1.fna&oh=e403aa6bac027679646505a0407aa7be&oe=61868CB6"
+                    ></b-img>
+                  </div>
+                </b-col>
+                <b-col
+                  sm="12"
+                  md="3"
+                  align-self="center"
+                  class=" d-flex invTxtRotate text-nowrap  "
+                >
+                  <h3 class="invTxtRotate-1">
+                    A Rolha da garrafa do Rei Daonde?
+                  </h3>
+                </b-col>
+              </b-row>
+            </b-col>
+            <b-col sm="12" md="3">
+              <b-row>
+                <b-col sm="12" md="9" class="d-flex">
+                  <div class="invSpeImgDia">
+                    <b-img
+                      fluid
+                      class="invSpeImg"
+                      src="https://scontent.fopo3-1.fna.fbcdn.net/v/t1.6435-9/52913776_2201119723475306_5311530396482011136_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=BP34Qd4hoNsAX9JKcHK&_nc_ht=scontent.fopo3-1.fna&oh=e403aa6bac027679646505a0407aa7be&oe=61868CB6"
+                    ></b-img>
+                  </div>
+                </b-col>
+                <b-col
+                  sm="12"
+                  md="3"
+                  align-self="center"
+                  class=" d-flex invTxtRotate text-nowrap  "
+                >
+                  <h3 class="invTxtRotate-1">
+                    A Rolha da garrafa do Rei Daonde?
+                  </h3>
+                </b-col>
+              </b-row>
+            </b-col>
+          </b-row>
+          <b-row align-h="center" class="d-flex mt-n3">
+            <b-col sm="12" md="3">
+              <b-row>
+                <b-col sm="12" md="9" class="d-flex">
+                  <div class="invSpeImgDia">
+                    <b-img
+                      fluid
+                      class="invSpeImg"
+                      src="https://scontent.fopo3-1.fna.fbcdn.net/v/t1.6435-9/52913776_2201119723475306_5311530396482011136_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=BP34Qd4hoNsAX9JKcHK&_nc_ht=scontent.fopo3-1.fna&oh=e403aa6bac027679646505a0407aa7be&oe=61868CB6"
+                    ></b-img>
+                  </div>
+                </b-col>
+                <b-col
+                  sm="12"
+                  md="3"
+                  align-self="center"
+                  class=" d-flex invTxtRotate text-nowrap  "
+                >
+                  <h3 class="invTxtRotate-1">
+                    A Rolha da garrafa do Rei Daonde?
+                  </h3>
+                </b-col>
+              </b-row>
+            </b-col>
+          </b-row>
+          <b-row align-h="center" class="d-flex mt-n3">
+            <b-col sm="12" md="3">
+              <b-row>
+                <b-col sm="12" md="9" class="d-flex">
+                  <div class="invSpeImgDia">
+                    <b-img
+                      fluid
+                      class="invSpeImg"
+                      src="https://scontent.fopo3-1.fna.fbcdn.net/v/t1.6435-9/52913776_2201119723475306_5311530396482011136_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=BP34Qd4hoNsAX9JKcHK&_nc_ht=scontent.fopo3-1.fna&oh=e403aa6bac027679646505a0407aa7be&oe=61868CB6"
+                    ></b-img>
+                  </div>
+                </b-col>
+                <b-col
+                  sm="12"
+                  md="3"
+                  align-self="center"
+                  class=" d-flex invTxtRotate text-nowrap  "
+                >
+                  <h3 class="invTxtRotate-1">
+                    A Rolha da garrafa do Rei Daonde?
+                  </h3>
+                </b-col>
+              </b-row>
+            </b-col>
+            <b-col sm="12" md="3">
+              <b-row>
+                <b-col sm="12" md="9" class="d-flex">
+                  <div class="invSpeImgDia">
+                    <b-img
+                      fluid
+                      class="invSpeImg"
+                      src="https://scontent.fopo3-1.fna.fbcdn.net/v/t1.6435-9/52913776_2201119723475306_5311530396482011136_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=BP34Qd4hoNsAX9JKcHK&_nc_ht=scontent.fopo3-1.fna&oh=e403aa6bac027679646505a0407aa7be&oe=61868CB6"
+                    ></b-img>
+                  </div>
+                </b-col>
+                <b-col
+                  sm="12"
+                  md="3"
+                  align-self="center"
+                  class=" d-flex invTxtRotate text-nowrap  "
+                >
+                  <h3 class="invTxtRotate-1">
+                    A Rolha da garrafa do Rei Daonde?
+                  </h3>
+                </b-col>
+              </b-row>
+            </b-col>
+          </b-row>
+        </b-row>
+      </div>
+      <div v-if="showEdu"></div>
+      <div v-if="showForma"></div>
+      <!-- <h1 id="criacaoTitleOne">Em Circulação</h1>
+     
       <b-row>
         <b-col
           class="mt-3 col-xl-6 col-lg-6 col-md-12 col-sm-12"
@@ -15,7 +160,7 @@
           </h1></b-col
         >
 
-        <!-- <b-col
+        <b-col
             class="col-xl-12 col-lg-6 col-md-12 col-sm-12"
             v-for="n in 2"
             :key="n"
@@ -97,9 +242,8 @@
                 <br />
               </b-card-text>
             </b-card>
-          </b-col> -->
-      </b-row>
-      <!-- </b-card-group> -->
+          </b-col>
+      </b-row> -->
     </b-container>
   </div>
 </template>
@@ -107,18 +251,142 @@
 <script>
 export default {
   name: "Invencoes",
-  created() {},
+  data() {
+    return {
+      showSpet: true,
+      showEdu: false,
+      showForma: false,
+    };
+  },
+  methods: {
+    showSpe() {
+      this.showSpet = true;
+      this.showEdu = false;
+      this.showForma = false;
+    },
+    showEd() {
+      this.showEdu = true;
+      this.showSpet = false;
+      this.showForma = false;
+    },
+    showForm() {
+      this.showForma = true;
+      this.showSpet = false;
+      this.showEdu = false;
+    },
+  },
 };
 </script>
 
 <style>
-.criacaoName {
+@media (max-width: 575px) {
+}
+@media (min-width: 576px) {
+  .invTxtRotate {
+  }
+}
+
+@media (min-width: 768px) {
+  .invSpeImgDia {
+    
+    transition: transform 1s;
+    overflow: hidden;
+    transform: rotate(-45deg);
+  }
+
+  .invSpeImgDia:hover {
+    transform: rotate(0deg);
+  }
+  .invSpeImg {
+    
+    filter: grayscale(100%);
+    transition: transform 1s;
+    transform: rotate(45deg) scale(1.5);
+  }
+  .invSpeImg:hover {
+    
+    filter: grayscale(0%);
+    transform: rotate(0deg) ;
+    
+  }
+}
+
+@media (min-width: 992px) {
+  .invSpeImgDia {
+    
+    transition: transform 1s;
+    overflow: hidden;
+    transform: rotate(-45deg);
+  }
+
+  .invSpeImgDia:hover {
+    transform: rotate(0deg);
+  }
+  .invSpeImg {
+    
+    filter: grayscale(100%);
+    transition: transform 1s;
+    transform: rotate(45deg) scale(1.5);
+  }
+  .invSpeImg:hover {
+    
+    filter: grayscale(0%);
+    transform: rotate(0deg) ;
+    
+  }
+}
+
+@media (min-width: 1200px) {
+  .invSpeImgDia {
+    
+    transition: transform 1s;
+    overflow: hidden;
+    transform: rotate(-45deg);
+  }
+
+  .invSpeImgDia:hover {
+    transform: rotate(0deg);
+  }
+  .invSpeImg {
+    
+    filter: grayscale(100%);
+    transition: transform 1s;
+    transform: rotate(45deg) scale(1.5);
+  }
+  .invSpeImg:hover {
+    
+    filter: grayscale(0%);
+    transform: rotate(0deg) ;
+    
+  }
+  .invTxtRotate {
+    margin-top: -37vh;
+    margin-left: -1vw;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+  }
+  .invTxtRotate-1 {
+    color: white !important;
+  }
+}
+
+.invencoes {
+  margin-top: 15vh;
+}
+.invTxtRotate {
+  /* transform-origin: 0 0;
+    transform: rotate(90deg); */
+}
+#invBtn {
+  border-radius: 100vw;
+  color: black;
+}
+/* .criacaoName {
   font-family: "Titillium Web", sans-serif;
   font-weight: 200;
-  
 }
 .criacaoName:hover {
-   cursor: pointer;
+  cursor: pointer;
   animation: bounce;
   animation-duration: 1s;
 }
@@ -138,5 +406,5 @@ export default {
 .show-card span a {
   text-decoration: none;
   color: white;
-}
+} */
 </style>
