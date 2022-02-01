@@ -56,14 +56,16 @@ export default {
 
 <style>
 .navbar {
+  height: 7vh;
   background-color: white;
  
 }
 
 #logo {
   margin: 0px;
-  margin-right:3vw;
-  width: 7vw;
+  margin-right:4vw;
+  margin-left:2vw;
+  width: 4vw;
 }
 .navRouter:hover{
  color:black

@@ -26,16 +26,16 @@
       </section>
       <div>
         <div>
-          <h2 id="proximasDatas">Próximas Datas</h2>
+          <h2 id="proximasDatas" class="my-3 text-center">Próximas Datas</h2>
           <section id="next-shows">
-            <b-card-group deck id="show-deck">
+            <b-card-group deck id="show-deck" class="mx-2">
               <b-row class="mt-1 mb-2  border-0  justify-content-center">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                   <b-card
                     class="text-center border-danger mt-1 mb-1"
                     img-src="https://res.cloudinary.com/dsfbhbeyt/image/upload/v1628263066/opera%20isto/foto_mz8wof.webp"
                     img-alt="Card image"
-                    style="height:11rem; background-color:#202124"
+                    style="height:11rem; background-color:white"
                     img-left
                   >
                     <b-card-text style="color:white">
@@ -49,7 +49,7 @@
                     class="text-center border-danger mt-1 mb-1"
                     img-src="https://res.cloudinary.com/dsfbhbeyt/image/upload/v1628263066/opera%20isto/foto_mz8wof.webp"
                     img-alt="Card image"
-                    style="height:11rem; background-color:#202124; color:white"
+                    style="height:11rem; background-color:white"
                     img-left
                   >
                     <b-card-text style="color:white">
@@ -74,10 +74,11 @@ export default {
 </script>
 <style>
 .home{
-  background-color:#202124
+  background-color:white
 }
 .background {
   background-image: url("https://res.cloudinary.com/dsfbhbeyt/image/upload/v1628173349/A-rolha-da-garrafa-12_rm6lj1.webp");
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

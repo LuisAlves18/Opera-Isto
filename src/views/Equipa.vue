@@ -6,7 +6,7 @@
           <div v-for="elem in this.$store.state.team" :key="elem.id">
             <b-col class="mx-4 teamPhotos1">
               <img
-                class="rounded-circle"
+                class="pics"
                 id="teamPhoto"
                 :src="require(`../assets/equipa/${elem.photoName}.jpg`)"
               />
@@ -103,6 +103,9 @@
 
   border-radius: 100px;
   opacity: 0;
+}
+.pics{
+  border-radius: 20px 5px 30px 5px;
 }
 .text {
   color: white;
